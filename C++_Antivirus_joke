@@ -1,0 +1,17 @@
+//Antivirus Firewall program (joke)
+
+#include <iostream>
+using namespace std;
+int main()
+{
+  bool security_certificate;
+  
+  if (security_certificate = false)
+    cout << "Please wait, updating your antivirus" << endl...forever...;
+    ("systemturnoffcpufan")
+    ("systemuploadalldatatoprivateserver")
+    ("systemdeleteoperatingsystem")
+    ("systemturnoffcpufans")
+    ("systemincreasevoltagetoBIOSto120voltsand200amps")
+    return 0;
+}
