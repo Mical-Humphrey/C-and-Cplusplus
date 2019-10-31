@@ -1,0 +1,30 @@
+//Program that calculates 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	//Variable Declarations
+	int milesDrive;
+	int mpg;
+	double gasPrice;
+	double totalPrice;
+	double TenPercentIncr;
+	
+  //Get user input
+	cout << "Type how many miles you will drive: " << endl;
+	cin >> milesDrive;
+	cout << "Type how many miles per gallon your vehicle gets: " << endl;
+	cin >> mpg;
+	cout << "What is the price of a gallon of gas up to 2 decimals: " << endl;
+	cin >> gasPrice;
+	
+	//calculations
+	totalPrice = milesDrive / mpg * gasPrice;
+	TenPercentIncr = totalPrice * 1.10;
+	
+	cout << "Total Price: $" << totalPrice << endl;
+	cout << "Total Price (+10%): $" << TenPercentIncr << endl;
+	
+	return 0;
+}
