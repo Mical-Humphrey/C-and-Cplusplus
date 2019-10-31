@@ -1,0 +1,37 @@
+/* Program to find the difference and average of a set of numbers
+*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	
+	//declarations
+	int const MAX = 12;
+	int numbers[MAX];
+	int i;
+	double total = 0;
+	double avg;
+	double diff;
+	
+	//housekeeping
+	
+	for (i = 0; i < MAX; i++)
+	{
+		cout << "Numbers? " << endl;
+		cin >> numbers[i];
+	}
+	
+	for (i = 0; i < MAX; i++)
+	{
+		total = total + numbers[i];
+		avg = total / MAX;
+		diff = avg - numbers[i];
+	}
+	
+	for (i = 0; i < MAX; i++)
+	{
+	
+		cout << numbers[i] << " diff is " << avg - numbers[i] << endl;
+	}	
+}
