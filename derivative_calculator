@@ -1,0 +1,31 @@
+//This is a c++ program that uses the power rule on single variable derivatives. Its super basic and mostly a proof of concept for
+//an easy task which many people have solved a thousand times over in the past, usually better than I did.
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //Variable declarations
+    double coefficient;
+    double exponent;
+    
+    //Explain purpose of program to user, get user inputs
+    cout << "This is a single variable derivative calculator that uses the power rule only. Format is a*x^n." << endl; 
+    cout << "Enter the coefficient: ";
+    cin >> coefficient;
+    cout << "Enter the exponent: ";
+    cin >> exponent;
+    
+    
+    //Begin the explanation using original variables and no endl so we can use the changed version of same variables in the next step
+    cout << "the derivative of " << coefficient << "x to the power of " << exponent << " is ";
+    
+    coefficient = coefficient * exponent;
+    exponent = exponent - 1;
+    
+    cout << coefficient << "x to the power of " << exponent << endl;
+    
+    return 0;
+}
