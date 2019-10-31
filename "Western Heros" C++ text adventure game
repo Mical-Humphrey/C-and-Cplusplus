@@ -1,0 +1,149 @@
+//"Western Heros" C++ text adventure game by Mical Humphrey. Has system commands to clear screen, so its windows specific.
+
+#include <iostream>
+using namespace std;
+int main()
+{		
+	cout << "		****** WESTERN HEROS ************************************\n		* By\n		*  Mical\n		*   Humphrey" << endl;
+	cout<<"		#############################################################"<<endl;
+	cout<<"		#                  _  _                                     #"<<endl;  
+	cout<<"		#                 ( `   )_                                  #"<<endl;  
+	cout<<"		#                (    )    `)                               #"<<endl;  
+	cout<<"		#              (_   (_ .  _) _)                             #"<<endl;  
+	cout<<"		#                                             _             #"<<endl;  
+	cout<<"		#                                            (  )           #"<<endl;  
+	cout<<"		#             _ .                         ( `  ) . )        #"<<endl;  
+	cout<<"		#           (  _ )_                      (_, _(  ,_)_)      #"<<endl;  
+	cout<<"		#         (_  _(_ ,)                                        #"<<endl;  
+	cout<<"		#                                                           #"<<endl;  
+	cout<<"		#                  _  _                                     #"<<endl;  
+	cout<<"		#                 ( `   )_                                  #"<<endl;  
+	cout<<"		#                (    )    `)                               #"<<endl;  
+	cout<<"		#              (_   (_ .  _) _)                             #"<<endl;  
+	cout<<"		#                                             _             #"<<endl;  
+	cout<<"		#                                            (  )           #"<<endl;  
+	cout<<"		#             _ .                         ( `  ) . )        #"<<endl;  
+	cout<<"		#           (  _ )_                      (_, _(  ,_)_)      #"<<endl;  
+	cout<<"		#         (_  _(_ ,)                                        #"<<endl;  
+	cout<<"		#############################################################"<<endl;
+	system("pause");
+	system("cls");
+	
+
+	string ans;
+
+	cout << "\n\nAre you excited to play WESTERN HEROS? Enter 'y' or 'n' and press the enter key." << endl;
+	cin >> ans;
+	system("cls");
+	
+	if (ans == "y")
+	{cout << "\n\nHooray! That's the spirit!'" << endl;}
+	else if (ans == "n")
+	{cout << "\n\nAwww, why do you have to be so negative? Everyone else is having fun except for you apparentally. :'(" << endl;}
+	else
+	{cout << "\n\nYou have problems following instructions." << endl;}
+
+	system("pause");
+	system("cls");
+	
+	cout << "\n\nYou find yourself riding on a horse through a hot desert on a search for buried treasure. \nyou come across a bridge." << endl;
+	system("pause");
+	system("cls");
+	cout << "\n\nThe bridge is in terrible shape and its falling apart. If you cross the bridge, you will save 10 days of travel to your very important destination." << endl;
+	system("pause");
+	system("cls");
+	cout << "\n\nWill you risk your life to cross the bridge, or will you take the long route around the canyon? Enter 'bridge' or 'canyon': " << endl;
+	cin >> ans;
+	system("cls");
+	
+	if (ans == "bridge")
+	{cout << "\n\nDreams of wealth and excitement for adventure shine in your eyes as you rush to the bridge, your heart overflowing with the hope of making your dreams come true." << endl;
+	system("pause");
+	system("cls");
+	cout << "\n\nYour horse shows some weak hesitation as you gallop triumphantly across the damaged bridge. \nOne hoof in front of the other cracks against the wooden boards until finally....no sound is heard except snapping." << endl;
+	system("pause");
+	system("cls");
+	cout << "\n\nYou have the best view in the world of the grand canyon as you fall from the top to the bottom to your gruesome death. \n\nYOU DIED." << endl;
+	return 0;}
+	
+	else if (ans == "suicide")
+	{cout << "\n\nYou realize that you were born in the wrong time. Maybe its because you never found love or maybe its because you never chased your dream of pursuing pottery professionally.\nPress 'y' and Enter to continue." << endl;
+	system("pause");
+	system("cls");
+	cout << "\n\nWhatever the case, you've decided to end your incredible adventure for buried treasure by shooting yourself. Better luck next time. \n\nYOU DIED." << endl;
+	return 0;}
+	
+	else
+	{cout << "You decide that the bridge is obviously dangerous so you play it smart and make the extra effort to take the long way." << endl;}
+	system("pause");
+	system("cls");
+	
+	cout << "\n\nYour patience initially appears to be rewarded when you come across an old farm with a cooky old man putting the finishing touches on his dangerously primitive, home built hot air balloon." << endl;
+	system("pause");
+	system("cls");
+	cout << "\nHe gestures you over and declares 'Why I say kid, you'd be doing me a huge favor if you could test this here balloon for me. \nCould you take it up and across the canyon?'" << endl;
+	cout << "\nThe old man is confused, forgetful, and doesn't seem to know how to use tools properly. Will you take the crazy old man's offer, or continue to ride? Enter 'balloon' or 'ride'." << endl;
+	cin >> ans;
+	
+	if (ans == "balloon")
+	{cout << "\n\nyou decide 'what the heck.' What's life without a little excitement?" << endl;
+	system("pause");
+	system("cls");
+	cout << "\n\nSo you abandon your trusty horse, that your late father passed on to you, in the desert to die alone. You go with the old grandpa who doesn't know what his own name is and you hop into a trashy hunk of junk to fly across a canyon." << endl;
+	system("pause");
+	system("cls");
+	cout << "\n\nAs you float thousands of meters above the floor, you start to get a bad feeling. The balloon is shaking violently. Small parts of it start to collapse. Ropes snap and the balloon tears." << endl;
+	cout << "\n\nBut somehow you make it to the other side before the balloon rips into thousands of pieces and drops you a few feet to the ground." << endl;
+	system("pause");
+	system("cls");
+	cout << "\n\nYou've broken your ankle in the fall. Stranded far away from any help, you're forced to watch the vultures close in, waiting for heat stroke to take away your final breaths." << endl;
+	system("pause");
+	system("cls");
+	cout << "As your vision fades, you realize that there was no buried treasure out there for you to find. The treasure was your adventure, the treasure was love, the treasure was the people who matter most." << endl;
+	cout << "\n\nYOU DIED" << endl;
+	return 0;}
+	
+	else if (ans == "suicide")
+	{cout << "\n\nYou realize that you were born in the wrong time. Maybe its because you never found love or maybe its because you never chased your dream of pursuing pottery professionally.\nPress 'y' and Enter to continue." << endl;
+	cin >> ans;
+	cout << "\n\nWhatever the case, you've decided to end your incredible adventure for buried treasure by shooting yourself. Better luck next time. \n\nYOU DIED." << endl;
+	return 0;}
+	
+	else
+	{cout << "\n\nYou wisely decide that maybe you should leave this one alone.\nYou politely decline as the old man's kind granddaughter appears and rushes him back to the house, apologizing for his sometimes dangerous mental condition." << endl;
+	system("pause");
+	cout << "\nYou are quickly on your way again; petting your faithful horse, hydrating in the heat, and singing old forgotten spirituals from your youth, prior to the surrender." << endl;
+	system("pause");}
+	
+	cout << "\n\nYou've been riding for a few more days when you see something shiny sticking out of the sand. You investigate and discover a treasure chest. Eager for riches, you throw open the top to find an empty container." << endl;
+	system("pause");
+	system("cls");
+	cout << "\nThe thought occurs to you, maybe the treasure you were seeking was the journey you're on. Maybe your treasure is your loved ones or your dreams. The idea occurs to you to settle down in a nearby town and start a new life.\nMaybe it was fate for you to find this nearby town? Maybe better things await your here?" << endl;
+	system("pause");
+	system("cls");
+	cout << "\n\nYou must now decide, will you settle down, or will you go hunting for more treasure in a never ending and ultimately spiritually soul crushing and growth stunting labor to find meaningless riches; \na task which could cost you a family, a home, a living, and ultimately your life?" << endl;
+	system("pause");
+	system("cls");
+	cout << "Would you like to 'settle' into a life of meaning, or 'toil' in a life of greed? 'settle' or 'toil'?" << endl;
+	cin >> ans;
+	
+	if (ans == "settle")
+	{cout << "\n\nYou decide to settle down to a quiet life. However, you were unaware that you had crossed the border and were now in Mexico. You give it your best shot, make a few friends and have a brief fling before you're on the road again searching for treasure!" << endl;
+	cout << "This wasn't your final home, but you're glad you got to spend some time experiencing relationships and stability." << endl;
+	system("pause");}
+	
+	else if (ans == "suicide")
+	{cout << "\n\nYou realize that you were born in the wrong time. Maybe its because you never found love or maybe its because you never chased your dream of pursuing pottery professionally.\nPress 'y' and Enter to continue." << endl;
+	cin >> ans;
+	cout << "\n\nWhatever the case, you've decided to end your incredible adventure for buried treasure by shooting yourself. Better luck next time. \n\nYOU DIED." << endl;
+	return 0;}
+
+	else
+	{cout << "\n\nYou decide to put everything on the line to serve your mindless and selfish quest for wealth. As you ride past the town's orphanage of sad children looking for an adult to care for them, you avoid eye contact. You're just passing through, you justify to yourself." << endl;
+	cout << "You ride past postings for job openings. The town needs a hero, a hard worker, an honest person to help them. You close your eyes and ignore the call for action, the abundant sense of purpose, the people who need you." << endl;
+	cout << "By the time you're outside the town limits, you feel like maybe there was something else you should have done here. Maybe there was a bigger plan and you ignored it because you were so obsessed with your own vanity." << endl;
+	cout << "You're back on the road looking for buried treasure...." << endl;
+	system("pause");}
+	
+	return 0;
+}
