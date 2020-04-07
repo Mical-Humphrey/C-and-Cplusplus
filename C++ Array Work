@@ -1,0 +1,46 @@
+//This is a program which uses arrays to store input. The input is compared against some number ranges and we
+//end up with a count of how many of the numbers correspond to each range.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	//declare variables
+	int score = 0;
+	int range[8] = { 0 };
+	int n;
+
+	cout << "Scores? ";
+
+	//processes
+	while (score != -1)
+	{
+	cin >> score;
+
+	n = score / 25;
+
+	range[n] = range[n] + 1;
+
+	}
+
+
+
+	//output
+
+	cout << " Range   Num" << endl;
+	cout << "-------  ---" << endl;
+	cout << "  0- 24  " << range[0] << endl;
+	cout << " 25- 49  " << range[1] << endl;
+	cout << " 50- 74  " << range[2] << endl;
+	cout << " 75- 99  " << range[3] << endl;
+	cout << "100-124  " << range[4] << endl;
+	cout << "125-149  " << range[5] << endl;
+	cout << "150-174  " << range[6] << endl;
+	cout << "175-199  " << range[7] << endl;
+
+
+
+
+
+	return 0;
+}
