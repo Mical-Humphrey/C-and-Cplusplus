@@ -1,0 +1,65 @@
+/*
+* Mical Humphrey
+*/
+#include <iostream>
+
+using namespace std;
+
+class car {
+	public:
+		start() {
+			cout << "The car has started" << endl;
+			return 0;
+		}
+		
+		forward() {
+			cout << "The car is moving forward" << endl;
+			return 0;
+		}
+		brake() {
+			cout << "The car has stopped" << endl;
+			return 0;
+		}
+		turn(string direction) {
+			cout << "the car has turned " << direction << endl;
+			return 0;
+		}
+		
+};
+
+int main()
+{
+	car myCar;
+	int input;
+	
+	myCar.start();
+	myCar.forward();
+	myCar.turn("left");
+	myCar.turn("left");
+	myCar.turn("left");
+	myCar.turn("left");
+	myCar.brake();
+	
+	cout << "Ok, now it's your turn to drive. Please select -1 to quit, 1 to move forward, 2 to brake, 3 to turn left, and 4 to turn right! Good luck, don't crash lol" << endl;
+	
+	while (input != -1)
+	{
+		cin >> input;
+		
+		if (input == 1) {
+			myCar.forward();
+		}
+		if (input == 2) {
+			myCar.brake();
+		}
+		if (input == 3) {
+			myCar.turn("left");
+		}
+		if (input == 4) {
+			myCar.turn("right");			
+		}
+	}
+	
+	return 0;
+}
+
