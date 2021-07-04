@@ -1,0 +1,31 @@
+Demonstrating C Pointers. A pointer holds a reference to a memory location.
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char word[100] = "Alice and Bob had a communication. It was a good communication. The message arrived as expected.";
+    char *ptr;
+    ptr=word;
+    
+    //standard use of for loop to access array index to contrast against the pointers used here.
+    printf("Here is your sentence: ");
+    for(int i=0; i<strlen(word);i++)
+        printf("%c", word[i]);
+
+    //Use of pointer to access array index backwards
+    printf("\n\nHere is your sentence backwards: ");
+    for(int i=(strlen(word)); i>=0;i--)
+        printf("%c", *(ptr+i));
+    
+    printf("\n\nHere is every other word of your sentence: ");
+    for(int i=0; i<strlen(word);i=i+2)
+        printf("%c", *(ptr+i));
+    
+    //*ptr gives us the value at the memory location, ptr gives us the actual address. 0xsomething something.
+    //random every time.
+    printf("\n\nHere is the memory location of element [0], which the pointer holds: %p", ptr);
+    
+    return 0;
+}
